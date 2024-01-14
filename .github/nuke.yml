@@ -1,5 +1,6 @@
 name: 'aws-nuke'
 on: 
+  push:
   workflow_dispatch:
   schedule: 
     - cron: '0 3 * * *'
@@ -30,4 +31,3 @@ jobs:
       - name: 'nuke-run'
         run: |
           cd _nuke && chmod +x run.sh && ./run.sh 
-          
