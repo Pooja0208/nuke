@@ -20,7 +20,7 @@ regions:
 - sa-east-1
 
 account-blocklist:
-  - 9999999999999  # prod
+  - 9999999999999  # production
 
 resource-types:
   excludes:
